@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Основные настройки
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8515800592:AAEHf7_iP4YvtTnLFP9sEACcLEzWhQpBI_A")
-OWNER_ID = int(os.getenv("OWNER_ID", "5275925143"))
+BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+OWNER_ID = int(os.getenv("OWNER_ID", ""))
 
 # Настройки по умолчанию
 OWNER_COMMISSION = 0.01
@@ -61,4 +61,5 @@ print(f"🤖 Токен: {BOT_TOKEN[:10]}...")
 print(f"👑 Владелец: {OWNER_ID}")
 print(f"📊 Групп: {len(PRIVATE_GROUP_IDS)}")
 print(f"⚙️ Комиссия гаранта: {OWNER_COMMISSION*100}%")
+
 print(f"🔢 Максимум сделок на группу: {MAX_DEALS_PER_GROUP}")
