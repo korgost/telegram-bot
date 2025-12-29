@@ -1,0 +1,12 @@
+app = "bitpamp_papahapa_bot"
+
+[build]
+  image = "python:3.11"
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
